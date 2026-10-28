@@ -226,7 +226,7 @@ class SystemMonitorApp(ctk.CTk):
 
         total_ram = psutil.virtual_memory().total / (1024 ** 3)
         self.thresholds = {
-            "CPU": 80.0,
+            "CPU": 85.0,
             "RAM": total_ram * 0.90,
             "Disk": 100.0,
             "Network": float('inf')
